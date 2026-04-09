@@ -43,9 +43,9 @@ With limited resources (single driver/vehicle), the company must select orders a
 | **Load From File** | Load delivery data from external text file |
 | **Random Generation** | Generate random delivery data with configurable size |
 | **4 Scheduling Algorithms** | Compare different approaches to solve the problem |
-| **Result Analysis** | View selected, unselected, summary, and comparison |
-| **Express Priority** | Express deliveries prioritized over standard |
-| **City-State Mapping** | Realistic location generation with correct city-state pairs |
+| **s** | |
+| **** |  |
+| **** |  |
 
 ## System Design
 - DeliveryStrategy<E> Interface
