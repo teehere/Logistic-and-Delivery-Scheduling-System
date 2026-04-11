@@ -30,7 +30,7 @@ public class DisplayView {
 		System.out.println("=".repeat(50));
 		System.out.println("<1> ");
 		System.out.println("<2> ");
-		System.out.println("<3> ");
+		System.out.println("<3> Dynamic Programming Algorithm(DP)");
 		System.out.println("<4> Earliest Deadline First Algorithm (EDF)");
 		System.out.println("<Q> Quit");
 		System.out.println("-".repeat(50));
@@ -109,5 +109,6 @@ public class DisplayView {
 	
 	    System.out.println("=".repeat(130));
 	    System.out.println("TOTAL PROFIT: " + total);
+
     }
 }

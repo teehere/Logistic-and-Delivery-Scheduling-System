@@ -77,7 +77,7 @@ public class DeliveryController {
 			case "2":
 				// new evelyn(delivery);
 			case "3":
-				// new oscar(delivery);
+				return new DPAlgorithm(deliveries);
 			case "4":
 				return new EDFAlgorithm(deliveries);
 			case "Q":
