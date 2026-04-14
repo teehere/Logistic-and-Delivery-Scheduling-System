@@ -6,21 +6,26 @@ import java.time.*;
 import model.Delivery;
 
 public class RandomGenerator {
+	private static final Random ran = new Random();
 	
 	public static List<Delivery> generate(int n) {
 		
 		List<Delivery> deliveryList = new ArrayList<>();
 		List<String> items = loadProducts();
-		Random ran = new Random();
 		
 		for (int i=1; i<=n; i++) {
 			            
 			// pick random item and city
+			if( items.isEmpty()) {
+				System.err.println("No products found in item.txt");
+				return new ArrayList<>();
+			}
+			
 			String item = items.get(ran.nextInt(items.size()));
             
             // random generate   
             LocalDate orderDate = LocalDate.now();
-			LocalDate deadline = orderDate.plusDays(ran.nextInt(5) + 1); // 1 to 5 days
+			LocalDate deadline = orderDate.plusDays(ran.nextInt(100) + 1); // 1 to 5 days
 			int sales = ran.nextInt(100)+1;
 			int quantity = ran.nextInt(30)+1;
 			int profit = sales*quantity;
