@@ -6,6 +6,7 @@ public class DPAlgorithm extends AbstractDeliveryStrategy<Delivery>{
 	public DPAlgorithm(List<Delivery> delivery) {
 		super(delivery);
 	}
+	
 	//n = number of job, D = maxDeadline
 	@Override
 	public void schedule(List<Delivery> deliveries) {

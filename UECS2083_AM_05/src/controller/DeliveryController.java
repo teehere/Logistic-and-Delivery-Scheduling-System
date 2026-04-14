@@ -30,7 +30,7 @@ public class DeliveryController {
     }
     
     private void loadData() {
-        while (true) {
+        while (true) { // to return to here when case 5 under showResults
             view.showMainMenu();
             String option = scanner.nextLine().trim().toUpperCase();
             
@@ -56,14 +56,16 @@ public class DeliveryController {
     }
     
     private void runAlgorithm() {
-        AbstractDeliveryStrategy<Delivery> strategy = selectAlgorithm();
-        
-        // get execution time (ms)
-        long start = System.currentTimeMillis();
-        strategy.schedule(deliveries);
-        long end = System.currentTimeMillis();
-        
-        showResults(strategy, end - start);
+    	while(true) {
+	        AbstractDeliveryStrategy<Delivery> strategy = selectAlgorithm();
+	        
+	        // get execution time (ms)
+	        long start = System.currentTimeMillis();
+	        strategy.schedule(deliveries);
+	        long end = System.currentTimeMillis();
+	        
+	        showResults(strategy, end - start);
+    	}
     }
     
     private AbstractDeliveryStrategy<Delivery> selectAlgorithm() {
@@ -107,7 +109,7 @@ public class DeliveryController {
 	    		// comparison
 	    	case "5":
 	    		System.out.println("Returning to Previous Menu"); // error !!!!!!!!!!!!
-                break;
+                return;
 	    	default:
 	    		System.out.println("Invalid Option, Please Try Again!");
             }
