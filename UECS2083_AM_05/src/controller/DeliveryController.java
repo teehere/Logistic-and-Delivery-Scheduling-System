@@ -119,13 +119,10 @@ public class DeliveryController {
 	    		scanner.nextLine();
 	    		break;
 	    	case "3":
-<<<<<<< HEAD
 	    		view.printSummary(strategy, deliveries);
 	    		System.out.println("Press any key to return.................");
-=======
 	    		// summary (total jobs/ selected/unselected job/missed deadline/profit earned/loss/average profit per job/...)
 	    		System.out.println("Press any key to return...");
->>>>>>> branch 'main' of https://github.com/teehere/Job-Sequence-Problem.git
 	    		scanner.nextLine();
 	    		break;
 	    	case "4":
