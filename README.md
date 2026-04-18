@@ -106,5 +106,14 @@ DeliverySchedulingSystem/
 ```
 
 ## Sample Input
-- Load Data From Text File
-<img width="498" height="147" alt="image" src="https://github.com/user-attachments/assets/9861e9ae-bb75-469d-902f-92bb0a79e3a4" />
+- Load Data From Text File <br />
+The system reads delivery data from `src/data/delivery.txt` with the following format:
+```
+Order#1,SmartPhone,2026-03-20,2026-03-22,3000,1,3000
+Order#2,Keyboard,2026-03-20,2026-03-21,500,2,1000
+Order#3,Laptop,2026-03-21,2026-03-23,2000,1,2000
+Order#4,Powerbank,2026-03-21,2026-03-22,20,5,100
+Order#5,Gaming Mouse,2026-03-22,2026-03-24,200,3,600
+Order#6,Whole Chicken,2026-03-22,2026-03-23,12,4,48
+Order#7,Keyboard,2026-03-23,2026-03-25,8,15,120
+```
