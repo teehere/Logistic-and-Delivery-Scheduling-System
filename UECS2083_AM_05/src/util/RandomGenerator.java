@@ -25,7 +25,7 @@ public class RandomGenerator {
             
             // random generate   
             LocalDate orderDate = LocalDate.now();
-			LocalDate deadline = orderDate.plusDays(ran.nextInt(5) + 1); // 1 to 5 days
+			LocalDate deadline = orderDate.plusDays(ran.nextInt(100) + 1); // 1 to 5 days
 			double sales = ran.nextDouble() * 100 + 1;
 			int quantity = ran.nextInt(30)+1;
 			double profit = sales*quantity;
