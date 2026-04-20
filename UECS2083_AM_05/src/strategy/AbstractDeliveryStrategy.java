@@ -2,8 +2,6 @@ package strategy;
 
 import java.util.*;
 
-//import model.Delivery;
-
 public abstract class AbstractDeliveryStrategy<E> implements DeliveryStrategy<E> {
 	protected List<E> delivery; // main storage
 	protected List<E> selected = new ArrayList<>(); // selected job

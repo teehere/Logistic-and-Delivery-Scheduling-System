@@ -3,10 +3,7 @@ package view;
 // import from defined package
 import model.Delivery;
 import model.Result;
-import strategy.AbstractDeliveryStrategy;
-import strategy.GreedyAlgorithm;
-import strategy.DPAlgorithm;
-import strategy.EDFAlgorithm;
+import strategy.*;
 
 import java.util.*;
 import java.time.format.DateTimeFormatter;
@@ -226,7 +223,7 @@ import java.time.format.DateTimeFormatter;
 
  		}
  	
- 		System.out.println("==========================================");
+ 		System.out.println("============================================");
  	    System.out.println("BEST ALGORITHM RESULT");
  	    System.out.println("Algorithm : " + best);
  	    System.out.printf("Profit    : %.2f\n", bestProfit);

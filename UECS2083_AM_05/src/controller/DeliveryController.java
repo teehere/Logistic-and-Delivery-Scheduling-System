@@ -1,13 +1,12 @@
 package controller;
 
 // import from defined packages
-import model.Delivery;
+import model.*;
 import strategy.*;
 import view.DisplayView;
 import util.*;
 
 import java.util.*;
-import model.Result;
 
 public class DeliveryController {
     

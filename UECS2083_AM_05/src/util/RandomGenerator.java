@@ -1,9 +1,10 @@
 package util;
 
+import model.Delivery;
+
 import java.util.*;
 import java.io.*;
 import java.time.*;
-import model.Delivery;
 
 public class RandomGenerator {
 	private static final Random ran = new Random();

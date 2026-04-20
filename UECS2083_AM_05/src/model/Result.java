@@ -1,9 +1,9 @@
 package model;
 
 public class Result {
-	String name;
-	long time;
-	double profit;
+	private String name;
+	private long time;
+	private double profit;
 	
 	public Result(String name, long time, double profit) {
 		this.name = name;

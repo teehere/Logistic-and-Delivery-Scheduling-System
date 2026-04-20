@@ -1,10 +1,11 @@
 package util;
 
+import model.Delivery;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.io.*;
-import model.Delivery;
 
 public class FileLoader {
 	
