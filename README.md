@@ -58,11 +58,11 @@ With limited resources (single driver/vehicle), the company must select orders a
 ## Performance Comparison Table
 | Aspect | Greedy Algorithm | Task Priority Scheduling (Weighted) | Dynamic Programming | Earliest Deadline First (EDF) | 
 |-----------|-----------------|------------------|------------------|------------------|
-| **Core Strategy** | Highest profit first |  | Break complex problem into subproblems and solve the subproblems | Earliest deadline first |
-| **Time Complexity** | O(n^2) | O(n log n) | O(n*D)| O(n log n)|
-| **Deadline Guarantee** | No | No | Yes | Yes |
+| **Core Strategy** | Highest profit first | Highest profit first with deadline-based scheduling | Break complex problem into subproblems and solve the subproblems | Earliest deadline first |
+| **Time Complexity** | O(n^2) | O(n log n + n*d) | O(n*D)| O(n log n)|
+| **Deadline Guarantee** | No | Partial | Yes | Yes |
 | **Profit Maximizied** | Yes | Yes | Yes | No |
-| **Scalability** | Poor | Excellent | Moderate | Excellent |
+| **Scalability** | Poor | Moderate | Moderate | Excellent |
 | **Implementation Complexity** | Low | Moderate | High | Low |
 | **Speed** | Slow for larger input size, n | Fast | Moderate | Fastest |
 
@@ -71,7 +71,7 @@ With limited resources (single driver/vehicle), the company must select orders a
 |-----------|-----------------|------------------|
 | **Meeting deadlines at all costs** | EDF | Guarantees every scheduled job meets its deadline | 
 | **Maximum profit (small dataset)** | DP | Guarantees 100% optimal profit | 
-| **Flexible priority system** | Task Priority | Customizable weights for different factors |
+| **Flexible priority system** | Task Priority | Prioritises high profit jobs while respecting deadline constraints |
 | **Quick and simple solution** | EDF and Greedy | Minimal code, and easy to understand | 
 | **Multi-factor decisions** | Task Priority | Can incorporate profit, deadlines, customer value, distance, and etc | 
 
