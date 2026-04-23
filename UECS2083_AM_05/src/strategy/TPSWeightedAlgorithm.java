@@ -58,7 +58,7 @@ public class TPSWeightedAlgorithm extends AbstractDeliveryStrategy<Delivery> {
                     selected.add(d);
                     totalProfit += d.getProfit();
 
-                    System.out.println(order + ". " + d.getId()
+                    System.out.println(order + ". " + d.getDeliveryId()
                             + " | Profit: " + d.getProfit()
                             + " | Deadline: " + d.getDeadline()
                             + " | Scheduled at slot: " + t);
