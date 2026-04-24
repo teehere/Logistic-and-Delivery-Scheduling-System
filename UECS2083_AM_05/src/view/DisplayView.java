@@ -70,7 +70,7 @@ import java.time.format.DateTimeFormatter;
         System.out.println("\n" + "=".repeat(130));
         System.out.println(" ".repeat(55) + "ORIGINAL DELIVERIES");
         System.out.println("=".repeat(130));
-        System.out.printf("%-12s | %-15s | %-18s | %-24s | %-10s | %-15s | %-8s\n",
+        System.out.printf("%-12s | %-15s | %-18s | %-25s | %-10s | %-15s | %-8s\n",
             "DeliveryID", "Item", "Order Date", "Deadline", "Sales(RM)", "Quantity(unit)", "Profit(RM)");
         System.out.println("-".repeat(130));
         
@@ -93,7 +93,7 @@ import java.time.format.DateTimeFormatter;
 	    System.out.println("=".repeat(130));
 	    System.out.println(" ".repeat(55) + "SELECTED DELIVERIES");
 	    System.out.println("=".repeat(130));
-	    System.out.printf("%-12s | %-15s | %-18s | %-24s | %-10s | %-15s | %-8s\n", 
+	    System.out.printf("%-12s | %-15s | %-18s | %-25s | %-10s | %-15s | %-8s\n", 
 	    		"DeliveryID", "Item", "Order Date", "Deadline", "Sales(RM)", "Quantity(unit)", "Profit(RM)");
 	    System.out.println("-".repeat(130));
 	   
@@ -128,7 +128,7 @@ import java.time.format.DateTimeFormatter;
         System.out.println(" ".repeat(55) + "UNSELECTED DELIVERIES");
         System.out.println("=".repeat(130));
         
-        System.out.printf("%-12s | %-15s | %-18s | %-24s | %-10s | %-15s | %-8s\n", 
+        System.out.printf("%-12s | %-15s | %-18s | %-25s | %-10s | %-15s | %-8s\n", 
                 "DeliveryID", "Item", "Order Date", "Deadline", "Sales(RM)", "Quantity(unit)", "Profit(RM)");
         System.out.println("-".repeat(130));
 
@@ -200,7 +200,7 @@ import java.time.format.DateTimeFormatter;
  		System.out.printf("Avg Profit (All Deliveries)     : %.2f\n", avgProfitAll);
 
  		System.out.println("\n------- SELECTED DELIVERIES --------");
- 		System.out.printf("%-12s | %-15s | %-18s | %-24s | %-10s | %-15s | %-8s\n",
+ 		System.out.printf("%-12s | %-15s | %-18s | %-25s | %-10s | %-15s | %-8s\n",
  				"DeliveryID", "Item", "Order Date", "Deadline", "Sales(RM)", "Quantity(unit)", "Profit(RM)");
  		System.out.println("-".repeat(130));
 
@@ -224,7 +224,7 @@ import java.time.format.DateTimeFormatter;
  		System.out.printf("TOTAL PROFIT: %.2f\n", totalProfit);
 
  		System.out.println("\n------- UNSELECTED DELIVERIES -------");
- 		System.out.printf("%-12s | %-15s | %-18s | %-24s | %-10s | %-15s | %-8s\n",
+ 		System.out.printf("%-12s | %-15s | %-18s | %-25s | %-10s | %-15s | %-8s\n",
  				"DeliveryID", "Item", "Order Date", "Deadline", "Sales(RM)", "Quantity(unit)", "Profit(RM)");
  		System.out.println("-".repeat(130));
 
